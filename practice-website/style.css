@@ -1,0 +1,189 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.left {
+    position: relative;
+    width: 40%;
+    height: 100%;
+    background-color: rgb(252, 253, 252);
+    font-size: 30px;
+
+}
+
+.left-nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+    padding: 20px 30px;
+}
+
+.left-nav-lists {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+}
+
+.left-nav-lists a {
+    color: black;
+    text-decoration: none;
+}
+
+.left-bottom-texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 33%;
+
+    gap: 20px;
+    padding: 0px 55px;
+    width: 100%;
+    /* height: 100%; */
+
+
+
+    /*
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center; */
+
+
+
+}
+
+.left-bottom-texts h1 {
+    font-size: 94px
+}
+
+.left-bottom-texts p {
+    opacity: 0.6;
+    font-size: 25px;
+}
+
+
+
+.left-bottom-textsss h3 {
+    font-weight: 400;
+    border-bottom: 2px solid rgb(161, 156, 156);
+    opacity: 0.8;
+
+}
+
+
+/* images.in */
+
+.right {
+    width: 60%;
+    height: 100%;
+    background-color: yellow;
+}
+
+#r-top {
+    display: flex;
+    width: 100%;
+    height: 45%;
+    background-color: bisque;
+
+
+}
+
+#r-bottom {
+    width: 100%;
+    height: 55%;
+    background-image: url('img/kayla-speid-NAORMjpT4dw-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+}
+
+.r-top-left {
+    width: 53%;
+    height: 100%;
+    /* background-color: rgb(237, 160, 45) */
+    background-image: url('img/mae-mu-I7A_pHLcQK8-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.r-top-right {
+    width: calc(100% - 53%);
+    height: 100%;
+    /* background-color: blueviolet; */
+    background-image: url('img/sam-moghadam-khamseh-yxZSAjyToP4-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
+
+@media (max-width:756px) {
+
+    .main {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .main .left {
+        width: 100%;
+
+    }
+
+
+    .left-bottom-texts {
+        padding: 0 20px;
+        margin-top: 20%;
+    }
+
+    .main .right {
+        width: 100%;
+        margin-top: 100%;
+
+    }
+
+    #r-bottom {
+        height: 245px;
+
+
+    }
+
+    .r-top-left {
+        height: 200px;
+
+    }
+
+    .r-top-right {
+        height: 200px;
+
+    }
+
+}
